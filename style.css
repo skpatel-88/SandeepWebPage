@@ -172,6 +172,44 @@ section h2 {
   background: rgba(9, 105, 218, 0.1);
   border-radius: 999px;
 }
+.role-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  border-left: 2px solid var(--border);
+}
+.role-list li {
+  position: relative;
+  padding: 0 0 0.9rem 1rem;
+}
+.role-list li:last-child {
+  padding-bottom: 0;
+}
+.role-list li::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0.3rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+.role-list strong {
+  display: block;
+  font-size: 0.95rem;
+}
+.role-date {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.role-skills {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-top: 0.1rem;
+}
 .edu-logo {
   height: 56px;
   width: 56px;
