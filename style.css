@@ -94,11 +94,11 @@ section h2 {
   vertical-align: middle;
   margin-right: 0.4rem;
   border-radius: 50%;
-  animation: bounceIcon 2s ease-in-out infinite;
+  animation: floatIcon 2.6s ease-in-out infinite;
 }
-@keyframes bounceIcon {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-6px) rotate(8deg); }
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 .card {
   background: var(--bg-alt);
