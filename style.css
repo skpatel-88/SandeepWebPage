@@ -298,3 +298,36 @@ footer {
   text-align: center;
   color: var(--muted);
 }
+.notfound {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+.notfound-code {
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  color: var(--accent);
+  margin: 0;
+}
+.notfound-spin {
+  display: inline-block;
+  animation: spin360 3s linear infinite;
+}
+@keyframes spin360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.notfound-title {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.6rem;
+}
+.notfound-msg {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
