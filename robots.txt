@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skpatel-88.github.io/SandeepWebPage/sitemap.xml
