@@ -35,6 +35,29 @@ header.hero h1 {
   animation: wave 2.2s infinite;
   transform-origin: 70% 70%;
 }
+.emoji-cycle {
+  position: relative;
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+}
+.emoji-cycle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: emojiCycle 8s infinite;
+}
+.emoji-cycle span:nth-child(1) { animation-delay: 0s; }
+.emoji-cycle span:nth-child(2) { animation-delay: 2s; }
+.emoji-cycle span:nth-child(3) { animation-delay: 4s; }
+.emoji-cycle span:nth-child(4) { animation-delay: 6s; }
+@keyframes emojiCycle {
+  0%, 5% { opacity: 0; }
+  10%, 20% { opacity: 1; }
+  25%, 100% { opacity: 0; }
+}
 @keyframes wave {
   0%, 60%, 100% { transform: rotate(0deg); }
   10% { transform: rotate(14deg); }
