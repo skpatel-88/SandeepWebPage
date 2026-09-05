@@ -119,16 +119,68 @@ section h2 {
   font-size: 0.85rem;
   color: var(--muted);
 }
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(var(--border), var(--accent), var(--border));
+}
+.timeline-item {
+  position: relative;
+  margin-left: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.9rem;
+  top: 1.6rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-alt);
+  box-shadow: 0 0 0 2px var(--border);
+}
+.timeline-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(9, 105, 218, 0.15);
+  border-color: var(--accent);
+}
 .edu-card {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.edu-card h3 {
+  font-size: 1.05rem;
+}
+.edu-card .meta {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(9, 105, 218, 0.1);
+  border-radius: 999px;
 }
 .edu-logo {
   height: 56px;
   width: 56px;
   object-fit: contain;
   flex-shrink: 0;
+  padding: 0.4rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
 .edu-logo-fallback {
   display: flex;
