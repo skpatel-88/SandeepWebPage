@@ -121,13 +121,6 @@ li {
   justify-content: center;
 }
 .badges img { height: 32px; }
-.stats-table {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-.stats-table img { height: 165px; max-width: 100%; }
 .connect {
   display: flex;
   flex-wrap: wrap;
