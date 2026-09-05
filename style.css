@@ -309,14 +309,21 @@ footer {
   animation: fadeInUp 0.8s ease-out;
 }
 .notfound-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   font-size: 5.5rem;
   font-weight: 700;
-  letter-spacing: 0.4rem;
   color: var(--accent);
   margin: 0;
 }
 .notfound-spin {
   display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+  object-fit: cover;
   animation: spin360 3s linear infinite;
 }
 @keyframes spin360 {
