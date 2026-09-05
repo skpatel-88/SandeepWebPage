@@ -317,26 +317,6 @@ li {
   justify-content: center;
 }
 .badges img { height: 32px; }
-.stats-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.stats-icon {
-  width: 44px;
-  height: 44px;
-}
-.stats-label {
-  margin: 0 0 0.4rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.stats-counter {
-  border-radius: 6px;
-}
 .connect {
   display: flex;
   flex-wrap: wrap;
@@ -354,6 +334,14 @@ a:hover { text-decoration: underline; }
 footer {
   text-align: center;
   padding: 0.5rem 0 2rem;
+}
+.visitor-badge {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+.visitor-badge img {
+  border-radius: 6px;
 }
 .copyright {
   margin: 0.1rem 0 0.5rem;
