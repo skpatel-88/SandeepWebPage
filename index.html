@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <img class="banner" id="top" src="assets/sandeep-bgm-web.jpg" alt="Sandeep Kumar Patel" />
+  <img class="banner" id="top" src="assets/images/sandeep-bgm-web.jpg" alt="Sandeep Kumar Patel" />
 
   <header class="hero">
     <h1><span class="emoji-cycle"><span>😊</span><span>😄</span><span>🤗</span><span>🥳</span><span>😁</span><span>🙌</span><span>😎</span><span>🚀</span></span> Hello! <span class="wave">👋</span> Namaste! <span class="wave">🙏</span> I'm Sandeep <span class="wave">👋</span></h1>
@@ -206,6 +206,17 @@
       </div>
     </section>
 
+    <section id="github-activity">
+      <h2>🐍 GitHub Contribution Snake</h2>
+      <div class="card snake-card">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/skpatel-88/skpatel-portfolio/output/github-contribution-grid-snake-dark.svg" />
+          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/skpatel-88/skpatel-portfolio/output/github-contribution-grid-snake.svg" />
+          <img class="snake-img" src="https://raw.githubusercontent.com/skpatel-88/skpatel-portfolio/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" />
+        </picture>
+      </div>
+    </section>
+
     <section id="projects">
       <h2>🔨 My Projects</h2>
       <p>Here are some key projects I've worked on:</p>
@@ -245,6 +256,26 @@
         <a href="https://github.com/skpatel-88"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
       </div>
       <p class="location">💬 Open to discussing DevOps practices, cloud infrastructure, and automation solutions.<br/>🌍 Currently located in <strong>Coforge at Greater Noida</strong>.</p>
+    </section>
+
+    <section id="tictactoe">
+      <h2>🎮 Tic Tac Toe</h2>
+      <p>Taking a break? Play a quick round against the computer.</p>
+      <div class="card ttt-card">
+        <p class="ttt-status" id="tttStatus">Your turn (X)</p>
+        <div class="ttt-board" id="tttBoard">
+          <button class="ttt-cell" data-index="0" aria-label="Cell 1"></button>
+          <button class="ttt-cell" data-index="1" aria-label="Cell 2"></button>
+          <button class="ttt-cell" data-index="2" aria-label="Cell 3"></button>
+          <button class="ttt-cell" data-index="3" aria-label="Cell 4"></button>
+          <button class="ttt-cell" data-index="4" aria-label="Cell 5"></button>
+          <button class="ttt-cell" data-index="5" aria-label="Cell 6"></button>
+          <button class="ttt-cell" data-index="6" aria-label="Cell 7"></button>
+          <button class="ttt-cell" data-index="7" aria-label="Cell 8"></button>
+          <button class="ttt-cell" data-index="8" aria-label="Cell 9"></button>
+        </div>
+        <button class="ttt-reset" id="tttReset" type="button">🔄 Restart</button>
+      </div>
     </section>
 
     <section class="motivation">
