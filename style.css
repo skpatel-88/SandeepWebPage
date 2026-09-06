@@ -324,23 +324,6 @@ li {
   justify-content: center;
 }
 .connect img { height: 32px; }
-.stats-card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  text-align: center;
-}
-.stats-label {
-  margin: 0;
-  font-weight: 600;
-  color: var(--muted);
-}
-.stats-counter {
-  border-radius: 6px;
-}
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .quote {
