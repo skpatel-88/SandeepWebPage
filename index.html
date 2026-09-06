@@ -9,7 +9,32 @@
 </head>
 <body>
 
-  <img class="banner" id="top" src="assets/images/sandeep-bgm-web.jpg" alt="Sandeep Kumar Patel" />
+  <div class="banner-wrap">
+    <div class="banner-slider">
+      <button class="slider-arrow slider-arrow-prev" id="bannerPrev" aria-label="Previous photo">&#10094;</button>
+      <div class="slider-frame" id="top">
+        <img class="banner slide is-active" src="assets/images/sandeep-bgm-web.jpg" alt="Sandeep Kumar Patel" />
+        <img class="banner slide" src="assets/images/sandeep-bmj-office.jpg" alt="Sandeep Kumar Patel at the BMJ Group office" />
+        <img class="banner slide" src="assets/images/sandeep-office-hallway.jpg" alt="Sandeep Kumar Patel at the office" />
+        <img class="banner slide" src="assets/images/sandeep-london-bloomsbury.jpg" alt="Sandeep Kumar Patel in London" />
+        <img class="banner slide" src="assets/images/sandeep-coforge-outdoor.jpg" alt="Sandeep Kumar Patel at Coforge" />
+        <img class="banner slide" src="assets/images/sandeep-office-event.jpg" alt="Sandeep Kumar Patel at an office event" />
+        <img class="banner slide" src="assets/images/sandeep-coforge-workstation.jpg" alt="Sandeep Kumar Patel at his Coforge workstation" />
+        <img class="banner slide" src="assets/images/sandeep-campus-lawn.jpg" alt="Sandeep Kumar Patel at the office campus lawn" />
+      </div>
+      <button class="slider-arrow slider-arrow-next" id="bannerNext" aria-label="Next photo">&#10095;</button>
+    </div>
+    <div class="slider-dots" id="bannerDots">
+      <button class="dot is-active" data-index="0" aria-label="Go to photo 1"></button>
+      <button class="dot" data-index="1" aria-label="Go to photo 2"></button>
+      <button class="dot" data-index="2" aria-label="Go to photo 3"></button>
+      <button class="dot" data-index="3" aria-label="Go to photo 4"></button>
+      <button class="dot" data-index="4" aria-label="Go to photo 5"></button>
+      <button class="dot" data-index="5" aria-label="Go to photo 6"></button>
+      <button class="dot" data-index="6" aria-label="Go to photo 7"></button>
+      <button class="dot" data-index="7" aria-label="Go to photo 8"></button>
+    </div>
+  </div>
 
   <header class="hero">
     <h1><span class="emoji-cycle"><span>😊</span><span>😄</span><span>🤗</span><span>🥳</span><span>😁</span><span>🙌</span><span>😎</span><span>🚀</span></span> Hello! <span class="wave">👋</span> Namaste! <span class="wave">🙏</span> I'm Sandeep <span class="wave">👋</span></h1>
@@ -256,26 +281,6 @@
         <a href="https://github.com/skpatel-88"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
       </div>
       <p class="location">💬 Open to discussing DevOps practices, cloud infrastructure, and automation solutions.<br/>🌍 Currently located in <strong>Coforge at Greater Noida</strong>.</p>
-    </section>
-
-    <section id="tictactoe">
-      <h2>🎮 Tic Tac Toe</h2>
-      <p>Taking a break? Play a quick round against the computer.</p>
-      <div class="card ttt-card">
-        <p class="ttt-status" id="tttStatus">Your turn (X)</p>
-        <div class="ttt-board" id="tttBoard">
-          <button class="ttt-cell" data-index="0" aria-label="Cell 1"></button>
-          <button class="ttt-cell" data-index="1" aria-label="Cell 2"></button>
-          <button class="ttt-cell" data-index="2" aria-label="Cell 3"></button>
-          <button class="ttt-cell" data-index="3" aria-label="Cell 4"></button>
-          <button class="ttt-cell" data-index="4" aria-label="Cell 5"></button>
-          <button class="ttt-cell" data-index="5" aria-label="Cell 6"></button>
-          <button class="ttt-cell" data-index="6" aria-label="Cell 7"></button>
-          <button class="ttt-cell" data-index="7" aria-label="Cell 8"></button>
-          <button class="ttt-cell" data-index="8" aria-label="Cell 9"></button>
-        </div>
-        <button class="ttt-reset" id="tttReset" type="button">🔄 Restart</button>
-      </div>
     </section>
 
     <section class="motivation">
